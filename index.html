@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Cat Breeds</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--get css from bootswatch.com -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        img {
+            text-align: center;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html">Cat's Breeds</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="jumbotron text-center">
+            <h2>Search cats by breeds</h2>
+            <img src="cat.png" alt="" style="width:30%;"><br />
+            <form id="searchForm">
+                <select class="form-select" aria-label="cats by breeds" id="list">
+                    <option>--Select a breed--</option>
+                </select>
+                <!--<input type="text" class="form-control" id="searchText" placeholder="Search cats">-->
+            </form>
+        </div>
+    </div>
+
+    <div class="container">
+        <div><br>
+            <div class="center">
+                <div class="catsImgDiv"> </div>
+            </div>
+
+            <h3 id="catsname"></h3>
+            <h5 id="description"></h5>
+            <div>---</div>
+            <div><i id="temperament"></i></div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
